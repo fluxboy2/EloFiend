@@ -2,12 +2,67 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" media="all" href="accordion.css">
+  <link href="css/main.css" media="all" rel="stylesheet">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <meta name="author" content="Thomas Garrison">
+  <meta name="description" content="Welcome to EloFiend! We host tournaments for Brawlhalla!">
+  <meta name="robots" content="archive,follow">
   <meta charset="UTF-8">
   <title>Document</title>
 </head>
 
 <body>
+  <header>
+    <p>Brawlhalla Tournaments!</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.htm">Home</a></li>
+      <li><a href="signup.htm">Sign Up</a></li>
+      <li><a href="brackets.htm">Brackets</a></li>
+      <li><a href="contact.htm">Contact Us</a></li>
+      <li><a href="faq.htm">FAQ</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="body" id="accordion_center">
+      <div id="accordion">
+        <a class="tab" href="javascript:shide('process')">What is our process?</a>
+        <div id="process" class="tab-content" style="display:none;">Our process is pretty simple right now. It's mostly manual until we implement our database into putting in the info that is entered on the sign up page, but once that is entered we input that data ourselves into the table. That is why we ask for 24 hours for your data to be inputted. </div>
 
+        <a class="tab" href="javascript:shide('name_bracket')">Why is my name not on the brackets?</a>
+        <div id="name_bracket" class="tab-content" style="display:none;">There are a few reasons why your name wouldn’t be on the brackets. Check to see if the tournament is open. Sometimes we forget to close the form once the tournament is over or the sign up date has passed. Another reason is the 24 hour period. We have to manually check the entries until we implement another way of doing it.</div>
+
+        <a class="tab" href="javascript:shide('prize')">The prize pool and what is in it.</a>
+        <div id="prize" class="tab-content" style="display:none;">It’s whatever we can come up with and it differs from tournament to tournament. We do have a donate button so if you like to donate to us to make the prize pool larger so others or you can win more then go right ahead. Check on the <a href="index.htm">index</a> page under our quick navigator in the top right and click on donate.</div>
+
+        <a class="tab" href="javascript:shide('aboutus')">About Us</a>
+        <div id="aboutus" class="tab-content" style="display:none;">This is text for about us.</div>
+
+        <a class="tab" href="javascript:shide('anothertab')">Another Tab</a>
+        <div id="anothertab" class="tab-content" style="display:none;">This is another tab.</div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>EloFiend &copy; 2015 | All Rights Reserved</p>
+  </footer>
+  <script>
+    function shide(id) {
+      var div = document.getElementById(id);
+
+      if (div.style.display == 'none') { //shows content
+        div.style.display = '';
+
+      } else { // hides content
+        div.style.display = 'none';
+
+      }
+
+    }
+  </script>
 </body>
 
 </html>
