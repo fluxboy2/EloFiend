@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="css/main.css" media="all" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <meta name="author" content="Thomas Garrison">
+  <meta name="description" content="Sign up for any tournament.">
+  <meta name="robots" content="archive,follow">
+  <meta charset="UTF-8">
+  <title>EloFiend- Sign up</title>
+  <script type="text/javascript" >
+    function checkSignup() {
+      if (signUp.team.value == "") {
+        alert("Please enter a team name.");
+        return false;
+      } else if (signUp.first.value == "") {
+        alert("Please enter the first person's name.");
+        return false;
+      }
+      //There is no need for a validator on the third text field because that one is optional as there can be 1v1 or 2v2 tournamnets.
+       else {
+        document.getElementById('signUpForm').submit();
+        return true;
+      }
+
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <p>Brawlhalla Tournaments!</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.htm">Home</a></li>
+      <li><a href="signup.htm">Sign Up</a></li>
+      <li><a href="brackets.htm">Brackets</a></li>
+      <li><a href="contact.htm">Contact Us</a></li>
+      <li><a href="faq.htm">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="body">
+
+      <form action="php/database.php" method="post" class="signup" name="signUp" id="signUpForm">
+        <table>
+          <h1>Signup</h1>
+          <tr>
+            <td align="right">
+              Team Name:
+            </td>
+            <td>
+              <input id="team" type="text" name="teamName" maxlength="15" size="15">
+            </td>
+          </tr>
+          <tr>
+            <td align="right">
+              First Teammate:
+            </td>
+            <td>
+              <input id="first" type="text" name="firstPerson" maxlength="25" size="15">
+            </td>
+          </tr>
+          <tr>
+            <td align="right">
+              Second Teammate:
+            </td>
+            <td>
+              <input id="second" type="text" name="secondPerson" maxlength="25" size="15">
+                <p>*If this is a 1v1 then there is no need to enter data into this.<p>
+            </td>
+
+          </tr>
+          <tr>
+            <td colspan="2" >
+              <input type="button" value="Submit" onclick="checkSignup()">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>EloFiend &copy; 2015 | All Rights Reserved</p>
+  </footer>
+</body>
+
+</html>

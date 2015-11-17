@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="css/main.css" media="all" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <meta name="author" content="Thomas Garrison">
+  <meta name="description" content="Welcome to EloFiend! We host tournaments for Brawlhalla!">
+  <meta name="robots" content="archive,follow">
+  <meta charset="UTF-8">
+  <script>
+    function selectWindow(form) {
+      var formindex = form.quick_nav.selectedIndex;
+      if (formindex > 0) {
+
+        window.location = form.quick_nav.options[formindex].value;
+      }
+    }
+  </script>
+  <title>EloFiend - Home</title>
+</head>
+
+<body>
+  <header>
+    <p>Brawlhalla Tournaments!</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.htm">Home</a></li>
+      <li><a href="signup.htm">Sign Up</a></li>
+      <li><a href="brackets.htm">Brackets</a></li>
+      <li><a href="contact.htm">Contact Us</a></li>
+      <li><a href="faq.htm">FAQ</a></li>
+
+      <form action="#" method="post" class="quicknav">
+        <select size="1" name="quick_nav" id="quickNav" width="200px" onchange="selectWindow(this.form)">
+          <option selected="selected">Please select a link</option>
+          <option id="twitch" value="http://www.twitch.tv">Twitch.tv</option>
+          <option id="twitter" value="http://www.twitter.com">Twitter</option>
+          <option id="facebook" value="http://www.facebook.com">Facebook</option>
+        </select>
+      </form>
+
+    </ul>
+  </nav>
+
+  <main>
+
+    <div class="body">
+      <div class="index_pic">
+        <img src="images/brawlhallalogo.png" height="263px" width="500px" alt="The logo for the game Brawlhalla">
+      </div>
+      <p>Welcome to EloFiend! Here at EloFiend we aim to make signing up for our tournaments a lot easier. We want everyone to take part in our tournaments and have fun while doing it. Before we would just post on Reddit to sign up, but now you can sign
+        up directly through our website. If you have any questions please first check our FAQ and see if your problem/question is posted there and if it is not go ahead go to our contact us page and ask your question.</p>
+      <p>Please sign up using the sign up link. Then enter all the info asked. Once you enter your info it will be entered into our database and we will put you into our brackets within 24 hours. After that please watch our brackets page and you will have
+        a time entered to when you will play your match.</p>
+
+      <p></p>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>EloFiend &copy; 2015 | All Rights Reserved</p>
+  </footer>
+
+</body>
+
+</html>
