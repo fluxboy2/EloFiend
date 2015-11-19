@@ -1,3 +1,6 @@
+#contact_tab td {
+  text-align: right;
+}
 footer {
   background-color: #c3c3c3;
   border: 1px solid #000000;

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="css/main.css" media="all" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<meta name="author" content="iHeArCoLoRs">
+	<meta name="description" content="Welcome to EloFiend! We host tournaments for Brawlhalla!">
+	<meta name="robots" content="archive,follow">
+	<title>EloFiend Tournament - Signup</title>
+</head>
+
+<body>
+	<!--Header-->
+	<header class="header">
+		<h1 style="text-align: center;">Brawlhalla Tournaments</h1>
+	</header>
+	<!--Navigation-->
+	<nav class="nav">
+		<ul>
+			<li><a href="index.htm">Home</a></li>
+			<li><a href="signup.htm">Signup</a></li>
+			<li><a href="brackets.htm">Brackets</a></li>
+			<li><a href="login.htm">Login</a></li>
+		</ul>
+	</nav>
+
+	<main class="main" style="border: 2px solid black; text-align: center; background-color: #869dc7; margin: 10px; border-radius: 10px;">
+		<h1>Signup</h1>
+		<form action="php/database.php" method="post">
+			<table class="signupbor">
+				<tr>
+					<td align="right">
+						Team Name:
+					</td>
+					<td>
+						<input id="team" type="text" name="teamName" maxlength="15" size="15">
+					</td>
+				</tr>
+				<tr>
+					<td align="right">
+						First Teammate:
+					</td>
+					<td>
+						<input id="first" type="text" name="firstPerson" maxlength="25" size="15">
+					</td>
+				</tr>
+				<tr>
+					<td align="right">
+						Second Teammate:
+					</td>
+					<td>
+						<input id="second" type="text" name="secondPerson" maxlength="25" size="15">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+							<button type="submit" name="submit">Submit</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</main>
+	<!--Footer-->
+	<footer class="footer">
+		<p>EloFiend &copy; 2015 | All Rights Reserved</p>
+	</footer>
+</body>
+
+</html>
